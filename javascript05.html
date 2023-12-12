@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 05</title>
+  </head>
+  <body>
+    <header>
+      <h1>JavaScript 05</h1>
+      <hr />
+    </header>
+    <main>
+      <h1>Operadores Lógicos</h1>
+      <input id="nota" type="text" placeholder="Nota" onkeyup="validacao()" />
+      <input
+        id="frequencia"
+        type="text"
+        placeholder="Frequência"
+        onkeyup="validacao()"
+      />
+      <button id="btnEnviar" onclick="avaliacao()" disabled="true">
+        Enviar
+      </button>
+      <p id="resultado"></p>
+      <p id="invalido" style="display: none">
+        Valores inválidos, favor digitar valores entre <br />
+        Nota: 0 a 10; Frequência: 0 a 100
+      </p>
+
+      <hr />
+
+      <h1>Estruturas de Repetição</h1>
+      <button id="repetir" onclick="repeticao()">Repetir</button>
+      <p id="seq"></p>
+    </main>
+    <footer>
+      <hr />
+      <p><a href="index.html">Voltar para Index</a></p>
+    </footer>
+
+    <script src="scripts/script-javascript05.js"></script>
+  </body>
+</html>

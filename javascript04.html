@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 04</title>
+  </head>
+  <body>
+    <header>
+      <h1>JavaScript 04</h1>
+      <hr />
+    </header>
+
+    <main>
+      <h1>Hora</h1>
+      <input
+        id="hora"
+        type="text"
+        placeholder="Digite a hora..."
+        onkeyup="validacao()"
+        onsubmit="submitHora()"
+      />
+      <button id="btnEnviar" onclick="submitHora()" disabled>Enviar</button>
+      <br />
+      <span id="invalido" style="color: red; display: none"
+        >Valor inválido!</span
+      >
+      <br />
+      <button onclick="horas()">Hora Atual</button>
+    </main>
+
+    <footer>
+      <hr />
+      <p><a href="index.html">Voltar para Index</a></p>
+    </footer>
+
+    <script src="scripts/script-javascript04.js"></script>
+  </body>
+</html>

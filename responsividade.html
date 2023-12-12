@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsividade</title>
+
+    <style>
+      body {
+        background-color: gainsboro;
+      }
+
+      @media (min-width: 600px) {
+        body {
+          background-color: gray;
+        }
+      }
+
+      @media (min-width: 1023px) {
+        body {
+          background-color: rgb(66, 66, 66);
+        }
+
+        h1,
+        h2,
+        p {
+          color: gainsboro;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsividade</h1>
+
+    <h2>Imagem não responsiva</h2>
+    <img src="imagens/yorha.jpg" alt="Yorha" style="width: 300px" />
+
+    <h2>Imagem responsiva</h2>
+    <img src="imagens/yorha.jpg" alt="Yorha" style="width: 30%" />
+
+    <h2>Texto responsivo</h2>
+    <p style="line-height: 1.2em; text-indent: 1em">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+      voluptates et consequatur adipisci, ea fuga rerum, quaerat eligendi
+      corporis, pariatur fugit dolorum nesciunt quasi. Natus, perferendis nemo
+      atque, mollitia, consectetur temporibus dignissimos dolore corporis
+      dolorem dicta laborum aut nesciunt. Numquam laudantium quas laboriosam
+      modi ratione aliquam. Hic qui eos magni? Architecto, aliquid. Asperiores
+      maxime iure laboriosam doloribus quos omnis eaque. Quidem hic temporibus
+      aliquam laudantium non tempore! Corrupti voluptate voluptatem molestiae
+      ullam voluptatibus, autem vero, adipisci est voluptas facere nihil
+      delectus repellat. Tempore in ipsam nam perferendis cupiditate, rem totam
+      ipsa commodi harum ex, adipisci dignissimos sequi. Libero, cumque quasi?
+      Doloribus id cum explicabo labore molestiae porro distinctio iure
+      perspiciatis earum ab nobis, animi tempore repudiandae ea dolor, hic quam?
+      Tenetur in natus eaque quis eveniet voluptate porro nobis, praesentium,
+      officiis repellat incidunt mollitia ipsam ad veniam rerum tempora dolores.
+      Eligendi, ipsa vero ducimus temporibus fugit animi odit laboriosam nulla
+      neque soluta? Quasi nam iure tempore exercitationem hic, facere inventore
+      odio ratione illo quae a recusandae id aperiam ex delectus voluptates enim
+      eligendi explicabo provident optio doloremque fugiat. Totam, quaerat optio
+      corrupti laudantium suscipit tempore voluptatem reiciendis iste aut
+      veniam. Quibusdam sunt repellendus molestiae ratione nesciunt iste quasi
+      magni! Hic assumenda maxime quae deleniti minus accusamus? Suscipit maxime
+      eius beatae alias, asperiores aut ducimus harum quam veritatis iure, unde
+      blanditiis neque dolores ab ipsa id dignissimos. Debitis dolore ratione,
+      ipsam nihil repellat libero. Soluta nesciunt iusto saepe quae sit numquam
+      aspernatur eaque iste unde repellendus, debitis hic dolore, incidunt nobis
+      voluptate dolores illum aliquam ex temporibus perferendis fugiat quas quo.
+      Possimus magni praesentium impedit incidunt consectetur, cumque
+      accusantium? Hic debitis voluptatem quasi dolor, distinctio, non placeat
+      vel dolorem adipisci porro pariatur quisquam. Deserunt pariatur illo
+      assumenda placeat culpa nesciunt perferendis, soluta facilis quis. Ad at
+      modi, tempore libero reiciendis reprehenderit.
+    </p>
+
+    <h2 style="font-size: 5vh">Texto responde à altura</h2>
+    <h2 style="font-size: 5vw">Texto responde à largura</h2>
+
+    <h2 style="font-size: 5vmin">Texto responde à menor dimensão</h2>
+    <h2 style="font-size: 10vmax">Texto responde à maior dimensão</h2>
+
+    <p><a href="index.html">Voltar para Index</a></p>
+  </body>
+</html>

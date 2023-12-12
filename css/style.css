@@ -1,0 +1,61 @@
+body {
+  background-color: rgb(77, 88, 99);
+  background-image: url("../imagens/background02.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1, h2, h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color:cyan;
+}
+
+p {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:azure;
+}
+
+/* LINKS */
+
+a {
+  color:plum;
+  text-decoration: none;
+}
+
+a:visited{
+  color:rgb(206, 60, 206);
+}
+
+a:hover{
+  color:coral;
+}
+
+a:active{
+  color: white;
+  background-color: black;
+}
+
+/* */
+
+.destaque{
+  color:rgb(179, 81, 81);
+}
+
+p.destaque{
+  color:rgb(223, 158, 158);
+}
+
+h2#titulo{
+  background-color: black;
+}
+
+/* Edições de imagens */
+
+img {
+  width: 200px;
+  border: solid 25px lightslategrey;
+  border-radius: 25px;
+
+  margin: 50px;
+  padding: 25px;
+}

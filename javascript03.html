@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 03</title>
+  </head>
+  <body id="corpo">
+    <header>
+      <h1>JavaScript 03</h1>
+      <hr />
+    </header>
+
+    <main>
+      <h1>Nome</h1>
+      <input id="input-name" type="text" />
+      <button onclick="nameSubmit()">Submit</button>
+      <p id="name"></p>
+
+      <hr />
+      <h1>Calculator</h1>
+      <h4>Add</h4>
+      <input id="add01" type="number" />
+      +
+      <input id="add02" type="number" />
+      <button onclick="add()">=</button>
+      <input id="result-add" type="number" />
+      <br />
+
+      <h4>Subtract</h4>
+      <input id="sub01" type="number" />
+      -
+      <input id="sub02" type="number" />
+      <button onclick="subtract()">=</button>
+      <input id="result-sub" type="number" />
+      <br />
+
+      <h4>Multiply</h4>
+      <input id="mult01" type="number" />
+      *
+      <input id="mult02" type="number" />
+      <button onclick="multiply()">=</button>
+      <input id="result-mult" type="number" />
+      <br />
+
+      <h4>Divide</h4>
+      <input id="div01" type="number" />
+      /
+      <input id="div02" type="number" />
+      <button onclick="divide()">=</button>
+      <input id="result-div" type="number" />
+      <hr />
+
+      <h2>Operadores de Incremento</h2>
+      <button onclick="font('+')">Aumentar Fonte</button>
+      <button onclick="font('-')">Diminuir Fonte</button>
+    </main>
+
+    <footer>
+      <hr />
+      <p><a href="index.html">Voltar para Index</a></p>
+    </footer>
+
+    <script src="scripts/script-javascript03.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 02</title>
+    <script src="scripts/script-javascript02.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="header-title">Título Principal</h1>
+    </header>
+
+    <main>
+      <h1 id="main-title">Uso de script externo</h1>
+      <button onclick="clickToShow('Curiooooso....','p-teste')">
+        Clique aqui... você irá se arrepender...
+      </button>
+
+      <p id="p-teste"></p>
+
+      <button onclick="clickToAlert('Alerta Vermelho')">Alerta!</button>
+
+      <button onclick="clickToWrite('Escrita Direta ui ui')">
+        Escrita direta
+      </button>
+
+      <button onclick="clickToLog('1, 2, 3, Testando')">Escrita de log</button>
+
+      <hr />
+
+      <h1 id="escrita-parametros">Escrita de parâmetros</h1>
+
+      <button onclick="clickToAlert('Boas Festas')">Boas festas</button>
+
+      <button onclick="clickToAlert('Feliz Ano Novo')">Ano novo</button>
+
+      <br />
+      <br />
+
+      <p id="your-name">Seu nome</p>
+      <button onclick="clickToPrompt('Digite seu nome', 'your-name')">
+        Nome
+      </button>
+    </main>
+
+    <footer>
+      <hr />
+      <p><a href="index.html">Voltar para Index</a></p>
+    </footer>
+  </body>
+</html>

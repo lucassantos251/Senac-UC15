@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body id="corpo">
+    <h1>Alterando HTML com JavaScript</h1>
+
+    <p id="teste"></p>
+    <p id="teste2"></p>
+
+    <button onclick="message()">Clique Aqui</button>
+
+    <br />
+    <hr />
+    <h1>Alterando imagens com JavaScript</h1>
+
+    <img id="onoffimg" src="imagens/Off.gif" />
+
+    <br />
+
+    <button id="onoff" onclick="onoff()">On</button>
+    <hr />
+
+    <h1>Alterando CSS com JavaScript</h1>
+    <button id="darkClick" onclick="darkTheme()">Dark Theme</button>
+    <hr />
+    <p><a href="index.html">Voltar para Index</a></p>
+
+    <script>
+      //HTML
+      function message() {
+        document.getElementById("teste").innerText = "Hello World";
+        document.getElementById("teste2").innerHTML = "Hello <br> World 2";
+      }
+      let state = false;
+
+      //Imagens
+      function onoff() {
+        if (state == false) {
+          state = true;
+
+          document.getElementById("onoff").innerText = "Off";
+          document.getElementById("onoffimg").src = "imagens/on.gif";
+        } else {
+          state = false;
+
+          document.getElementById("onoff").innerText = "On";
+          document.getElementById("onoffimg").src = "imagens/off.gif";
+        }
+      }
+
+      //CSS
+      let darkThemeBol = false;
+
+      function darkTheme() {
+        if (darkThemeBol == false) {
+          darkThemeBol = true;
+          document.getElementById("corpo").style.backgroundColor = "#333333";
+          document.getElementById("corpo").style.color = "#FFFFFF";
+          document.getElementById("darkClick").innerText = "Light Theme";
+        } else {
+          darkThemeBol = false;
+          document.getElementById("corpo").style.backgroundColor = "#DDDDDD";
+          document.getElementById("corpo").style.color = "#000000";
+          document.getElementById("darkClick").innerText = "Dark Theme";
+        }
+      }
+    </script>
+  </body>
+</html>
